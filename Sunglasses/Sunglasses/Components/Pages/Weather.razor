@@ -1,0 +1,67 @@
+﻿@page "/weather"
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+
+<PageTitle>Malus's Law Calculator</PageTitle>
+
+<h1>Calculate Intensity of Polarization Using Malus's Law</h1>
+
+<p>Malus's law is a law in optics that describes the relationship between a polarized object, in this case our sunglasses, and the intensity of light.</p>
+<p>With this law, we can calculate how intense light will be when hitting our sunglasses depending on the angle of incidence </p>
+<p>
+    Use the calculater below:
+    Reminder: Malus's Law: I = I=I 
+                               0
+                               ​
+                                ×cos 
+                               2S
+                                (θ)
+</p>
+
+<div>
+    <input aria-label="Angle of Propogation" id="Angle" @bind:event="oninput" @bind:get="AngleOfIncidence" @bind:set="OnAngleInput"/>
+    <label for="Angle">Angle of Propogation in degrees</label>
+    <input aria-label="Intensity of Light Before Polarization" id="I0" @bind="intensityOfLightBeforePolarization"/>
+    <label for="I0">Intensity of Light Before Polarization in W per m^2</label>
+</div>
+<div>
+    <h2>Intensity of Light After Polarization: @intensityOfLightAfterPolarization W M^2</h2>
+</div>
+
+@code {
+    
+    private double AngleOfIncidence { get; set; } = 40;
+
+    private double intensityOfLightAfterPolarization
+    {
+        get
+        {
+            return IntensityCalculator(AngleOfIncidence, intensityOfLightBeforePolarization);
+        }
+    }
+
+    private double intensityOfLightBeforePolarization { get; set; } = 100;
+
+    private double IntensityCalculator(double angleOfIncidence, double intensityOfLightBeforePolarization)
+    {
+        double angleInRadians = angleOfIncidence * Math.PI / 180.0;
+        return intensityOfLightBeforePolarization *  Math.Pow(Math.Cos(angleInRadians) ,2);
+    }
+
+    private double angleCalculator(double i0, double intensity)
+    {
+        return System.Math.Acos(System.Math.Sqrt(intensity / i0));
+    }
+
+    
+
+    private async Task<double> OnAngleInput(double d1)
+    {
+        var newValue = d1;
+
+        AngleOfIncidence = newValue;
+        return AngleOfIncidence;
+    }
+}

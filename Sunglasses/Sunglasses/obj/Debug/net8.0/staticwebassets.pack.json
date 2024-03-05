@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Sunglasses.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Sunglasses.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\shada\\OneDrive - Drexel University\\DrexelShit\\Winter2024\\Physics\\PhysicsBlazor\\Sunglasses\\Sunglasses\\wwwroot\\logo.jpg",
+      "PackagePath": "staticwebassets\\logo.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Sunglasses.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Sunglasses.props",
+      "PackagePath": "build\\Sunglasses.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Sunglasses.props",
+      "PackagePath": "buildMultiTargeting\\Sunglasses.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Sunglasses.props",
+      "PackagePath": "buildTransitive\\Sunglasses.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
